@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin Page</title>
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Our Store</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="/catalog">Catalog <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/contact">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/admin">Admin</a>
+                    </li>
+                   
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input id="txtSearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id="btnSearch" class="btn btn-outline-info my-2 my-sm-0" type="button">Search</button>
+                  </form>
+                </div>
+        </nav>
+    <div class="containe">
+
+         <h2>Register items to sell on the store</h2>
+         <div class="hide" id="alert">
+             <h6>Item is saved</h6>
+         </div>
+
+         <form class="form" action="">
+             <div class="form-group row">
+                        <label for="" class="offset-2 col-2 col-form-label">Code</label>
+                        <div class="col-5">
+                            <input type="text" id="txtCode" class="form-control">
+                        </div>
+             </div>
+             <div class="form-group row">
+                 <label for="" class="offset-2 col-2 col-form-label">Title</label>
+                 <div class="col-5">
+                     <input type="text" id="txtTitle" class="form-control">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <label for="" class="offset-2 col-2 col-form-label">Price</label>
+                 <div class="col-5">
+                     <input type="number" id="txtPrice" class="form-control">
+                 </div>
+             </div>
+             <div class="form-group row">
+                    <label for="" class="offset-2 col-2 col-form-label">Description</label>
+                    <div class="col-5">
+                        <input type="text" id="txtDescription" class="form-control">
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="" class="offset-2 col-2 col-form-label">Category</label>
+                    <div class="col-5">
+                        <input type="text" id="txtCategory" class="form-control">
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="" class="offset-2 col-2 col-form-label">Rating</label>
+                    <div class="col-5">
+                        <input type="number" min="0" max="5" id="txtRating" class="form-control">
+                    </div>
+            </div>
+            <div class="form-group row">
+                    <label for="" class="offset-2 col-2 col-form-label">Image</label>
+                    <div class="col-5">
+                        <input type="text" id="txtImage" class="form-control">
+                    </div>
+            </div>
+            <div class="row">
+                    
+                    <div class="col btn-container">
+                        <button id="btnSave" type="button" class="btn btn-primary">Save Item</button>
+                    </div>
+            </div>
+
+            
+
+         </form>
+
+
+        
+                
+    </div>
+
+    <div class="message">
+
+        <h2 id="message-h1">Messages & Feedbacks</h2>
+        <h3 id="message-name"></h3>
+        <h4 id="message-email"></h4>
+        <P id="message-msg"></P>
+
+    </div>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

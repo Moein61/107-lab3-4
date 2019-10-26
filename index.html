@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="Mystyle.css">
+    <title>Galactic Store</title>
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Our Store</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/catalog">Catalog <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item ">
+                      <a class="nav-link" href="/contact">Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="/admin">Admin</a>
+                    </li>
+                   
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input id= "txtSearch" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button id= "btnSearch" class="btn btn-outline-info my-2 my-sm-0" type="button">Search</button>
+                  </form>
+                </div>
+        </nav>
+
+
+
+  <div class="containe">
+
+
+      <div class="row">
+          <div class="col">
+              <div id = "catalog" class="catalog-container"></div>
+          </div>
+      </div>
+      
+      
+  </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="Script.js"></script>
+</body>
+</html>
